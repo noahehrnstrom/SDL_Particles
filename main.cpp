@@ -172,34 +172,11 @@ int main()
 		SDL_RenderClear(renderer);
 
 		rpressed = false;
-		/*
-		t1.launch();
-		t1.wait();
-		t2.launch();
-		t2.wait();
-		t3.launch();
-		t3.wait();
-		t4.launch();
-		t4.wait();
-		*/
-		/*
-		t1.wait();
-		t2.wait();
-		t3.wait();
-		t4.wait();
-		*/
+
 		update(1);
 		update(2);
 		update(3);
 		update(4);
-		/*
-		for (unsigned int i = 0; i < pos.size(); i++)
-		{
-			SDL_SetRenderDrawColor(renderer, cs[i].r, cs[i].g, cs[i].b, 255);
-			SDL_RenderDrawPoint(renderer, pos[i].x * zoom, pos[i].y * zoom);
-			//std::cout << "ok" << std::endl;
-		}
-		*/
 		SDL_RenderPresent(renderer);
 
 		//sf::sleep(sf::milliseconds(1));
